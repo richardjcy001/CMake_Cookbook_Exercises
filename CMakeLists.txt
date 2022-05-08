@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 project(recipe-04 LANGUAGES CXX)
-set(USE_LIBRARY OFF)
+option(USE_LIBRARY "Compile sources into a library" OFF)
 message(status "Compile sources into a library? ${USE_LIBRARY}")
 set(BUILD_SHARED_LIBS OFF)
 list(APPEND _sources Message.hpp Message.cpp)
